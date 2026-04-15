@@ -130,7 +130,7 @@ nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.95);backdrop-
 .apt p{font-size:.83rem;color:rgba(255,255,255,.42);line-height:1.65}
 
 /* ======= HOW IT WORKS (cream) ======= */
-.hiw{background:var(--cream);padding:6rem 0}
+.hiw{background:var(--cream);padding:6rem 0 3rem}
 .hiw-head{text-align:center;margin-bottom:3rem}
 .hiw-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem}
 .hiw-card{background:var(--white);border:1.5px solid var(--border);border-radius:20px;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s;display:flex;flex-direction:column}
@@ -143,7 +143,7 @@ nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.95);backdrop-
 .hiw-body p{font-size:.85rem;color:var(--mid);line-height:1.7}
 
 /* ======= PRICING (white) ======= */
-.pricing{background:var(--white);padding:6rem 0}
+.pricing{background:var(--white);padding:3rem 0 6rem}
 .pricing-head{text-align:center;margin-bottom:2rem}
 .toggle-wrap{display:flex;align-items:center;gap:.4rem;background:var(--cream);border:1px solid var(--border);border-radius:99px;padding:.3rem;margin:0 auto 3rem;width:fit-content}
 .tog{padding:.5rem 1.4rem;border-radius:99px;font-family:"Plus Jakarta Sans",sans-serif;font-weight:600;font-size:.86rem;border:none;cursor:pointer;transition:all .22s;color:var(--mid);background:transparent}
@@ -384,9 +384,21 @@ footer{background:var(--dark);padding:4rem 5% 0}
 
       <!-- STEP 1 — edit image URL, title, description -->
       <div class="hiw-card rv">
-        <div class="hiw-card-img" style="background:linear-gradient(135deg,#1a4a3a 0%,#0d6e4e 50%,#16a34a 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem">
-          <div style="font-size:3rem;opacity:.85">📋</div>
-          <div style="font-size:.8rem;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:.08em;text-transform:uppercase">Step 1</div>
+        <div class="hiw-card-img" style="background:#0F2A1E;display:flex;align-items:center;justify-content:center;overflow:hidden">
+          <svg width="260" height="160" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="14" width="220" height="132" rx="12" fill="#1a3d2a" stroke="#2a6040" stroke-width="1"/>
+            <text x="130" y="36" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="9" fill="rgba(255,255,255,.4)" font-weight="600" letter-spacing="1">CHOOSE ACCOUNT SIZE</text>
+            <rect x="32" y="44" width="58" height="32" rx="8" fill="#1a5c38" stroke="#26a05a" stroke-width="1.5"/>
+            <text x="61" y="64" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="11" fill="#4ade80" font-weight="700">$5K</text>
+            <rect x="100" y="44" width="58" height="32" rx="8" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.1)" stroke-width="1"/>
+            <text x="129" y="64" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="11" fill="rgba(255,255,255,.5)">$10K</text>
+            <rect x="168" y="44" width="58" height="32" rx="8" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.1)" stroke-width="1"/>
+            <text x="197" y="64" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="11" fill="rgba(255,255,255,.5)">$25K</text>
+            <rect x="66" y="88" width="128" height="32" rx="8" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.1)" stroke-width="1"/>
+            <text x="130" y="108" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="11" fill="rgba(255,255,255,.5)">$50K</text>
+            <rect x="50" y="130" width="160" height="8" rx="4" fill="#1DB954" opacity=".8"/>
+            <text x="130" y="137" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="7" fill="#fff" font-weight="700">GET STARTED FROM €49</text>
+          </svg>
         </div>
         <div class="hiw-body">
           <div class="step-num">01</div>
@@ -397,9 +409,27 @@ footer{background:var(--dark);padding:4rem 5% 0}
 
       <!-- STEP 2 — edit image URL, title, description -->
       <div class="hiw-card rv d1">
-        <div class="hiw-card-img" style="background:linear-gradient(135deg,#1a2a4a 0%,#1e40af 50%,#3b82f6 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem">
-          <div style="font-size:3rem;opacity:.85">📈</div>
-          <div style="font-size:.8rem;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:.08em;text-transform:uppercase">Step 2</div>
+        <div class="hiw-card-img" style="background:#0F1D2E;display:flex;align-items:center;justify-content:center;overflow:hidden">
+          <svg width="260" height="160" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="14" width="220" height="132" rx="12" fill="#162438" stroke="#1e3a5f" stroke-width="1"/>
+            <text x="130" y="34" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="9" fill="rgba(255,255,255,.4)" font-weight="600" letter-spacing="1">CHALLENGE PROGRESS</text>
+            <text x="36" y="54" font-family="Plus Jakarta Sans,sans-serif" font-size="8" fill="rgba(255,255,255,.4)">Profit target</text>
+            <rect x="36" y="58" width="142" height="7" rx="3.5" fill="rgba(255,255,255,.08)"/>
+            <rect x="36" y="58" width="92" height="7" rx="3.5" fill="#E85D20"/>
+            <text x="184" y="65" font-family="Plus Jakarta Sans,sans-serif" font-size="8" fill="#E85D20" font-weight="700">6.4%</text>
+            <text x="210" y="65" font-family="Plus Jakarta Sans,sans-serif" font-size="8" fill="rgba(255,255,255,.3)">/ 8%</text>
+            <text x="36" y="84" font-family="Plus Jakarta Sans,sans-serif" font-size="8" fill="rgba(255,255,255,.4)">Max drawdown</text>
+            <rect x="36" y="88" width="142" height="7" rx="3.5" fill="rgba(255,255,255,.08)"/>
+            <rect x="36" y="88" width="24" height="7" rx="3.5" fill="#1DB954"/>
+            <text x="184" y="95" font-family="Plus Jakarta Sans,sans-serif" font-size="8" fill="#1DB954" font-weight="700">1.7%</text>
+            <text x="210" y="95" font-family="Plus Jakarta Sans,sans-serif" font-size="8" fill="rgba(255,255,255,.3)">/ 8%</text>
+            <text x="36" y="114" font-family="Plus Jakarta Sans,sans-serif" font-size="8" fill="rgba(255,255,255,.4)">Trading days</text>
+            <rect x="36" y="118" width="142" height="7" rx="3.5" fill="rgba(255,255,255,.08)"/>
+            <rect x="36" y="118" width="57" height="7" rx="3.5" fill="#378ADD"/>
+            <text x="184" y="125" font-family="Plus Jakarta Sans,sans-serif" font-size="8" fill="#378ADD" font-weight="700">2 days</text>
+            <text x="210" y="125" font-family="Plus Jakarta Sans,sans-serif" font-size="8" fill="rgba(255,255,255,.3)">/ 5</text>
+            <text x="130" y="147" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="8" fill="rgba(255,255,255,.25)">No deadline — take your time</text>
+          </svg>
         </div>
         <div class="hiw-body">
           <div class="step-num">02</div>
@@ -410,9 +440,18 @@ footer{background:var(--dark);padding:4rem 5% 0}
 
       <!-- STEP 3 — edit image URL, title, description -->
       <div class="hiw-card rv d2">
-        <div class="hiw-card-img" style="background:linear-gradient(135deg,#3a1a0a 0%,#c2410c 50%,#e85d20 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem">
-          <div style="font-size:3rem;opacity:.85">💰</div>
-          <div style="font-size:.8rem;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:.08em;text-transform:uppercase">Step 3</div>
+        <div class="hiw-card-img" style="background:#1C0F08;display:flex;align-items:center;justify-content:center;overflow:hidden">
+          <svg width="260" height="160" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="14" width="220" height="132" rx="12" fill="#2a1a0e" stroke="#5a3018" stroke-width="1"/>
+            <circle cx="130" cy="52" r="22" fill="#E85D20" opacity=".15"/>
+            <circle cx="130" cy="52" r="14" fill="#E85D20"/>
+            <text x="130" y="57" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="14" fill="#fff" font-weight="700">✓</text>
+            <text x="130" y="90" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="10" fill="rgba(255,255,255,.5)">Payout confirmed</text>
+            <text x="130" y="108" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="22" fill="#fff" font-weight="800">€800</text>
+            <text x="130" y="124" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="8" fill="rgba(255,255,255,.3)">80% profit split · fee refunded</text>
+            <rect x="50" y="134" width="160" height="8" rx="4" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.08)" stroke-width=".5"/>
+            <text x="130" y="141" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="7" fill="rgba(255,255,255,.3)">Via Wise or bank transfer</text>
+          </svg>
         </div>
         <div class="hiw-body">
           <div class="step-num">03</div>
@@ -424,6 +463,79 @@ footer{background:var(--dark);padding:4rem 5% 0}
     </div>
   </div>
 </section>
+
+<!-- TESTIMONIALS — replace with real trader names/results when available -->
+<section style="background:#fff;padding:4rem 0">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:2.5rem">
+      <div class="tag rv">Traders</div>
+      <h2 class="ttl rv">What our traders say</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem">
+
+      <!-- TESTIMONIAL 1 — edit name, country, account, quote -->
+      <div class="rv" style="background:#FAF7F4;border:1.5px solid #E5E7EB;border-radius:16px;padding:1.75rem;display:flex;flex-direction:column;gap:1rem">
+        <div style="display:flex;gap:5px">
+          <span style="color:#E85D20;font-size:14px">★★★★★</span>
+        </div>
+        <p style="font-size:.92rem;color:#374151;line-height:1.75;flex:1">"I tried two other prop firms before PropCapital. The rules here are actually what they say — no surprises when I passed. Got my first payout within a week of requesting it."</p>
+        <div style="display:flex;align-items:center;gap:.85rem">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#1a4a3a,#16a34a);display:flex;align-items:center;justify-content:center;font-size:.9rem;font-weight:700;color:#fff;flex-shrink:0">MK</div>
+          <div>
+            <div style="font-size:.9rem;font-weight:700;color:#111827">Marcus K.</div>
+            <div style="font-size:.78rem;color:#6B7280">Germany &nbsp;·&nbsp; $10k Standard challenge</div>
+          </div>
+          <div style="margin-left:auto;text-align:right">
+            <div style="font-size:1.1rem;font-weight:800;color:#E85D20">€760</div>
+            <div style="font-size:.7rem;color:#9CA3AF">First payout</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TESTIMONIAL 2 — edit name, country, account, quote -->
+      <div class="rv d1" style="background:#FAF7F4;border:1.5px solid #E5E7EB;border-radius:16px;padding:1.75rem;display:flex;flex-direction:column;gap:1rem">
+        <div style="display:flex;gap:5px">
+          <span style="color:#E85D20;font-size:14px">★★★★★</span>
+        </div>
+        <p style="font-size:.92rem;color:#374151;line-height:1.75;flex:1">"The dashboard makes it so easy to track your progress. I knew exactly where I stood every day. Passed phase 1 in 12 days and phase 2 in 9 days — no stress."</p>
+        <div style="display:flex;align-items:center;gap:.85rem">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#1a2a4a,#1e40af);display:flex;align-items:center;justify-content:center;font-size:.9rem;font-weight:700;color:#fff;flex-shrink:0">SL</div>
+          <div>
+            <div style="font-size:.9rem;font-weight:700;color:#111827">Sofia L.</div>
+            <div style="font-size:.78rem;color:#6B7280">Spain &nbsp;·&nbsp; $25k Pro challenge</div>
+          </div>
+          <div style="margin-left:auto;text-align:right">
+            <div style="font-size:1.1rem;font-weight:800;color:#E85D20">€1,840</div>
+            <div style="font-size:.7rem;color:#9CA3AF">First payout</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TESTIMONIAL 3 — edit name, country, account, quote -->
+      <div class="rv d2" style="background:#FAF7F4;border:1.5px solid #E5E7EB;border-radius:16px;padding:1.75rem;display:flex;flex-direction:column;gap:1rem">
+        <div style="display:flex;gap:5px">
+          <span style="color:#E85D20;font-size:14px">★★★★★</span>
+        </div>
+        <p style="font-size:.92rem;color:#374151;line-height:1.75;flex:1">"€49 to start with a $5k account felt too good to be true. It wasn't. I failed my first attempt, bought again for €49, passed second time. The fee came back with my first payout."</p>
+        <div style="display:flex;align-items:center;gap:.85rem">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#3a1a0a,#c2410c);display:flex;align-items:center;justify-content:center;font-size:.9rem;font-weight:700;color:#fff;flex-shrink:0">AT</div>
+          <div>
+            <div style="font-size:.9rem;font-weight:700;color:#111827">Alex T.</div>
+            <div style="font-size:.78rem;color:#6B7280">Poland &nbsp;·&nbsp; $5k Starter challenge</div>
+          </div>
+          <div style="margin-left:auto;text-align:right">
+            <div style="font-size:1.1rem;font-weight:800;color:#E85D20">€338</div>
+            <div style="font-size:.7rem;color:#9CA3AF">First payout</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- DISCLAIMER — important legal note for fake/representative testimonials -->
+    <p style="text-align:center;font-size:.73rem;color:#9CA3AF;margin-top:1.5rem">Results shown are representative examples. Individual trading results vary. Past performance in a simulated environment is not indicative of future results.</p>
+  </div>
+</section>
+
 
 <!-- PRICING — edit prices, account sizes, rules -->
 <section class="pricing" id="challenges">
@@ -446,6 +558,10 @@ footer{background:var(--dark);padding:4rem 5% 0}
           <div class="p-fund-label">Funding amount</div>
           <div class="p-fee">€49</div>
           <div class="p-refund">✓ Fee refunded on first payout</div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EAF7EF;color:#15803d;font-weight:600">✓ News trading</span>
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EEF2FF;color:#3730a3;font-weight:600">✓ No deadline</span>
+          </div>
           <div class="p-div"></div>
           <ul class="p-rules">
             <li><span class="rl">Phase 1 target</span><span class="rv2">8%</span></li>
@@ -453,7 +569,7 @@ footer{background:var(--dark);padding:4rem 5% 0}
             <li><span class="rl">Min. trading days</span><span class="rv2">5 days</span></li>
             <li><span class="rl">Daily drawdown</span><span class="rv2">4%</span></li>
             <li><span class="rl">Max. drawdown</span><span class="rv2">8%</span></li>
-            <li><span class="rl">Trading period</span><span class="rv2">No limit</span></li>
+            <li><span class="rl">News trading</span><span class="rv2" style="color:#15803d">Allowed</span></li>
             <li><span class="rl">Profit split</span><span class="rv2">80%</span></li>
           </ul>
           <button class="p-btn p-btn-line" onclick="alert('Payment coming soon')">Get started</button>
@@ -465,6 +581,10 @@ footer{background:var(--dark);padding:4rem 5% 0}
           <div class="p-fund-label">Funding amount</div>
           <div class="p-fee">€89</div>
           <div class="p-refund">✓ Fee refunded on first payout</div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EAF7EF;color:#15803d;font-weight:600">✓ News trading OK</span>
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EEF2FF;color:#3730a3;font-weight:600">✓ No deadline</span>
+          </div>
           <div class="p-div"></div>
           <ul class="p-rules">
             <li><span class="rl">Phase 1 target</span><span class="rv2">8%</span></li>
@@ -472,7 +592,7 @@ footer{background:var(--dark);padding:4rem 5% 0}
             <li><span class="rl">Min. trading days</span><span class="rv2">5 days</span></li>
             <li><span class="rl">Daily drawdown</span><span class="rv2">4%</span></li>
             <li><span class="rl">Max. drawdown</span><span class="rv2">8%</span></li>
-            <li><span class="rl">Trading period</span><span class="rv2">No limit</span></li>
+            <li><span class="rl">News trading</span><span class="rv2" style="color:#15803d">Allowed</span></li>
             <li><span class="rl">Profit split</span><span class="rv2">80%</span></li>
           </ul>
           <button class="p-btn p-btn-fill" onclick="alert('Payment coming soon')">Get started</button>
@@ -483,6 +603,10 @@ footer{background:var(--dark);padding:4rem 5% 0}
           <div class="p-fund-label">Funding amount</div>
           <div class="p-fee">€179</div>
           <div class="p-refund">✓ Fee refunded on first payout</div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EAF7EF;color:#15803d;font-weight:600">✓ News trading</span>
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EEF2FF;color:#3730a3;font-weight:600">✓ No deadline</span>
+          </div>
           <div class="p-div"></div>
           <ul class="p-rules">
             <li><span class="rl">Phase 1 target</span><span class="rv2">8%</span></li>
@@ -490,7 +614,7 @@ footer{background:var(--dark);padding:4rem 5% 0}
             <li><span class="rl">Min. trading days</span><span class="rv2">5 days</span></li>
             <li><span class="rl">Daily drawdown</span><span class="rv2">4%</span></li>
             <li><span class="rl">Max. drawdown</span><span class="rv2">8%</span></li>
-            <li><span class="rl">Trading period</span><span class="rv2">No limit</span></li>
+            <li><span class="rl">News trading</span><span class="rv2" style="color:#15803d">Allowed</span></li>
             <li><span class="rl">Profit split</span><span class="rv2">80%</span></li>
           </ul>
           <button class="p-btn p-btn-line" onclick="alert('Payment coming soon')">Get started</button>
@@ -501,6 +625,10 @@ footer{background:var(--dark);padding:4rem 5% 0}
           <div class="p-fund-label">Funding amount</div>
           <div class="p-fee">€299</div>
           <div class="p-refund">✓ Fee refunded on first payout</div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EAF7EF;color:#15803d;font-weight:600">✓ News trading</span>
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EEF2FF;color:#3730a3;font-weight:600">✓ No deadline</span>
+          </div>
           <div class="p-div"></div>
           <ul class="p-rules">
             <li><span class="rl">Phase 1 target</span><span class="rv2">8%</span></li>
@@ -508,7 +636,7 @@ footer{background:var(--dark);padding:4rem 5% 0}
             <li><span class="rl">Min. trading days</span><span class="rv2">5 days</span></li>
             <li><span class="rl">Daily drawdown</span><span class="rv2">4%</span></li>
             <li><span class="rl">Max. drawdown</span><span class="rv2">8%</span></li>
-            <li><span class="rl">Trading period</span><span class="rv2">No limit</span></li>
+            <li><span class="rl">News trading</span><span class="rv2" style="color:#15803d">Allowed</span></li>
             <li><span class="rl">Profit split</span><span class="rv2">80%</span></li>
           </ul>
           <button class="p-btn p-btn-line" onclick="alert('Payment coming soon')">Get started</button>
@@ -525,13 +653,17 @@ footer{background:var(--dark);padding:4rem 5% 0}
           <div class="p-fund-label">Funding amount</div>
           <div class="p-fee">€59</div>
           <div class="p-refund">✓ Fee refunded on first payout</div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EAF7EF;color:#15803d;font-weight:600">✓ News trading</span>
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EEF2FF;color:#3730a3;font-weight:600">✓ No deadline</span>
+          </div>
           <div class="p-div"></div>
           <ul class="p-rules">
             <li><span class="rl">Profit target</span><span class="rv2">10%</span></li>
             <li><span class="rl">Min. trading days</span><span class="rv2">5 days</span></li>
             <li><span class="rl">Daily drawdown</span><span class="rv2">4%</span></li>
             <li><span class="rl">Max. drawdown</span><span class="rv2">8%</span></li>
-            <li><span class="rl">Trading period</span><span class="rv2">No limit</span></li>
+            <li><span class="rl">News trading</span><span class="rv2" style="color:#15803d">Allowed</span></li>
             <li><span class="rl">Profit split</span><span class="rv2">80%</span></li>
           </ul>
           <button class="p-btn p-btn-line" onclick="alert('Payment coming soon')">Get started</button>
@@ -543,13 +675,17 @@ footer{background:var(--dark);padding:4rem 5% 0}
           <div class="p-fund-label">Funding amount</div>
           <div class="p-fee">€99</div>
           <div class="p-refund">✓ Fee refunded on first payout</div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EAF7EF;color:#15803d;font-weight:600">✓ News trading</span>
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EEF2FF;color:#3730a3;font-weight:600">✓ No deadline</span>
+          </div>
           <div class="p-div"></div>
           <ul class="p-rules">
             <li><span class="rl">Profit target</span><span class="rv2">10%</span></li>
             <li><span class="rl">Min. trading days</span><span class="rv2">5 days</span></li>
             <li><span class="rl">Daily drawdown</span><span class="rv2">4%</span></li>
             <li><span class="rl">Max. drawdown</span><span class="rv2">8%</span></li>
-            <li><span class="rl">Trading period</span><span class="rv2">No limit</span></li>
+            <li><span class="rl">News trading</span><span class="rv2" style="color:#15803d">Allowed</span></li>
             <li><span class="rl">Profit split</span><span class="rv2">80%</span></li>
           </ul>
           <button class="p-btn p-btn-fill" onclick="alert('Payment coming soon')">Get started</button>
@@ -560,13 +696,17 @@ footer{background:var(--dark);padding:4rem 5% 0}
           <div class="p-fund-label">Funding amount</div>
           <div class="p-fee">€199</div>
           <div class="p-refund">✓ Fee refunded on first payout</div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EAF7EF;color:#15803d;font-weight:600">✓ News trading</span>
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EEF2FF;color:#3730a3;font-weight:600">✓ No deadline</span>
+          </div>
           <div class="p-div"></div>
           <ul class="p-rules">
             <li><span class="rl">Profit target</span><span class="rv2">10%</span></li>
             <li><span class="rl">Min. trading days</span><span class="rv2">5 days</span></li>
             <li><span class="rl">Daily drawdown</span><span class="rv2">4%</span></li>
             <li><span class="rl">Max. drawdown</span><span class="rv2">8%</span></li>
-            <li><span class="rl">Trading period</span><span class="rv2">No limit</span></li>
+            <li><span class="rl">News trading</span><span class="rv2" style="color:#15803d">Allowed</span></li>
             <li><span class="rl">Profit split</span><span class="rv2">80%</span></li>
           </ul>
           <button class="p-btn p-btn-line" onclick="alert('Payment coming soon')">Get started</button>
@@ -577,13 +717,17 @@ footer{background:var(--dark);padding:4rem 5% 0}
           <div class="p-fund-label">Funding amount</div>
           <div class="p-fee">€349</div>
           <div class="p-refund">✓ Fee refunded on first payout</div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EAF7EF;color:#15803d;font-weight:600">✓ News trading</span>
+            <span style="font-size:.68rem;padding:2px 7px;border-radius:99px;background:#EEF2FF;color:#3730a3;font-weight:600">✓ No deadline</span>
+          </div>
           <div class="p-div"></div>
           <ul class="p-rules">
             <li><span class="rl">Profit target</span><span class="rv2">10%</span></li>
             <li><span class="rl">Min. trading days</span><span class="rv2">5 days</span></li>
             <li><span class="rl">Daily drawdown</span><span class="rv2">4%</span></li>
             <li><span class="rl">Max. drawdown</span><span class="rv2">8%</span></li>
-            <li><span class="rl">Trading period</span><span class="rv2">No limit</span></li>
+            <li><span class="rl">News trading</span><span class="rv2" style="color:#15803d">Allowed</span></li>
             <li><span class="rl">Profit split</span><span class="rv2">80%</span></li>
           </ul>
           <button class="p-btn p-btn-line" onclick="alert('Payment coming soon')">Get started</button>
@@ -592,6 +736,65 @@ footer{background:var(--dark);padding:4rem 5% 0}
     </div>
   </div>
 </section>
+
+<!-- SCALING PLAN — edit account sizes and milestones -->
+<section style="background:#FAF7F4;padding:5rem 0">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:2.5rem">
+      <div class="tag rv">Growth path</div>
+      <h2 class="ttl rv">Scale your account as you grow</h2>
+      <p class="sub rv" style="margin:0 auto;text-align:center">Every 3 successful payouts unlocks the next account tier. No extra fee — just consistent performance.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0;margin-top:1rem" class="rv">
+      <!-- SCALING STEP 1 -->
+      <div style="background:#fff;border:1.5px solid #E5E7EB;border-right:none;padding:1.75rem 1.25rem;text-align:center;border-radius:12px 0 0 12px;position:relative">
+        <div style="width:36px;height:36px;border-radius:50%;background:#FEF0E8;color:#E85D20;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:800;margin:0 auto .85rem">1</div>
+        <div style="font-size:1.5rem;font-weight:800;color:#E85D20">$5K</div>
+        <div style="font-size:.72rem;color:#6B7280;margin:.25rem 0 .75rem">Starter</div>
+        <div style="font-size:.75rem;color:#374151;font-weight:500">Pass 3 payouts</div>
+        <div style="font-size:.7rem;color:#9CA3AF;margin-top:.25rem">80% split</div>
+        <div style="position:absolute;right:-14px;top:50%;transform:translateY(-50%);font-size:1.2rem;color:#E85D20;z-index:1">→</div>
+      </div>
+      <!-- SCALING STEP 2 -->
+      <div style="background:#fff;border:1.5px solid #E5E7EB;border-right:none;padding:1.75rem 1.25rem;text-align:center;position:relative">
+        <div style="width:36px;height:36px;border-radius:50%;background:#FEF0E8;color:#E85D20;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:800;margin:0 auto .85rem">2</div>
+        <div style="font-size:1.5rem;font-weight:800;color:#E85D20">$25K</div>
+        <div style="font-size:.72rem;color:#6B7280;margin:.25rem 0 .75rem">Pro</div>
+        <div style="font-size:.75rem;color:#374151;font-weight:500">Pass 3 payouts</div>
+        <div style="font-size:.7rem;color:#9CA3AF;margin-top:.25rem">80% split</div>
+        <div style="position:absolute;right:-14px;top:50%;transform:translateY(-50%);font-size:1.2rem;color:#E85D20;z-index:1">→</div>
+      </div>
+      <!-- SCALING STEP 3 -->
+      <div style="background:#fff;border:1.5px solid #E5E7EB;border-right:none;padding:1.75rem 1.25rem;text-align:center;position:relative">
+        <div style="width:36px;height:36px;border-radius:50%;background:#FEF0E8;color:#E85D20;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:800;margin:0 auto .85rem">3</div>
+        <div style="font-size:1.5rem;font-weight:800;color:#E85D20">$100K</div>
+        <div style="font-size:.72rem;color:#6B7280;margin:.25rem 0 .75rem">Elite</div>
+        <div style="font-size:.75rem;color:#374151;font-weight:500">Pass 3 payouts</div>
+        <div style="font-size:.7rem;color:#9CA3AF;margin-top:.25rem">85% split</div>
+        <div style="position:absolute;right:-14px;top:50%;transform:translateY(-50%);font-size:1.2rem;color:#E85D20;z-index:1">→</div>
+      </div>
+      <!-- SCALING STEP 4 -->
+      <div style="background:#fff;border:1.5px solid #E5E7EB;border-right:none;padding:1.75rem 1.25rem;text-align:center;position:relative">
+        <div style="width:36px;height:36px;border-radius:50%;background:#FEF0E8;color:#E85D20;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:800;margin:0 auto .85rem">4</div>
+        <div style="font-size:1.5rem;font-weight:800;color:#E85D20">$200K</div>
+        <div style="font-size:.72rem;color:#6B7280;margin:.25rem 0 .75rem">Master</div>
+        <div style="font-size:.75rem;color:#374151;font-weight:500">Pass 3 payouts</div>
+        <div style="font-size:.7rem;color:#9CA3AF;margin-top:.25rem">90% split</div>
+        <div style="position:absolute;right:-14px;top:50%;transform:translateY(-50%);font-size:1.2rem;color:#E85D20;z-index:1">→</div>
+      </div>
+      <!-- SCALING STEP 5 -->
+      <div style="background:linear-gradient(135deg,#E85D20,#c2410c);border:1.5px solid #E85D20;padding:1.75rem 1.25rem;text-align:center;border-radius:0 12px 12px 0">
+        <div style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:800;margin:0 auto .85rem">5</div>
+        <div style="font-size:1.5rem;font-weight:800;color:#fff">$400K</div>
+        <div style="font-size:.72rem;color:rgba(255,255,255,.7);margin:.25rem 0 .75rem">Champion</div>
+        <div style="font-size:.75rem;color:#fff;font-weight:600">Maximum tier</div>
+        <div style="font-size:.7rem;color:rgba(255,255,255,.7);margin-top:.25rem">90% split</div>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:.78rem;color:#9CA3AF;margin-top:1.25rem">Scaling is automatic — no applications, no fees. Just keep trading profitably.</p>
+  </div>
+</section>
+
 
 <!-- WHY US — edit icon, title, description for each item -->
 <section class="reasons" id="rules">
@@ -608,6 +811,86 @@ footer{background:var(--dark);padding:4rem 5% 0}
     </div>
   </div>
 </section>
+
+<!-- SUPPORT TEAM SECTION — replace avatar initials/colors with real photos via Crisp -->
+<section style="background:#fff;padding:4.5rem 0;border-top:1px solid #E5E7EB">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+
+      <div class="rl">
+        <div class="tag">Support team</div>
+        <h2 class="ttl">Real people.<br>Real answers.</h2>
+        <p class="sub" style="margin-bottom:1.5rem">We're a small team and we read every message personally. No bots, no ticket queues. When you have a question, a real person responds — usually within a few hours.</p>
+        <div style="display:flex;flex-direction:column;gap:.85rem;margin-bottom:2rem">
+          <div style="display:flex;align-items:center;gap:.85rem">
+            <div style="width:18px;height:18px;border-radius:50%;background:#EAF7EF;border:1.5px solid #16a34a;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <div style="width:7px;height:7px;border-radius:50%;background:#16a34a"></div>
+            </div>
+            <span style="font-size:.9rem;color:#374151">Live chat available — typically responds within 2 hours</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:.85rem">
+            <div style="width:18px;height:18px;border-radius:50%;background:#EAF7EF;border:1.5px solid #16a34a;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <div style="width:7px;height:7px;border-radius:50%;background:#16a34a"></div>
+            </div>
+            <span style="font-size:.9rem;color:#374151">Email support at contact@propcapital.net</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:.85rem">
+            <div style="width:18px;height:18px;border-radius:50%;background:#EAF7EF;border:1.5px solid #16a34a;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <div style="width:7px;height:7px;border-radius:50%;background:#16a34a"></div>
+            </div>
+            <span style="font-size:.9rem;color:#374151">Challenge rules questions answered same day</span>
+          </div>
+        </div>
+        <button onclick="if(window.$crisp){window.$crisp.push(['do','chat:open'])}" class="btn btn-orange">Chat with us now</button>
+      </div>
+
+      <div class="rr">
+        <!-- TEAM CARD — replace initials with real photos once you have them -->
+        <div style="background:#FAF7F4;border:1.5px solid #E5E7EB;border-radius:20px;padding:2rem;position:relative">
+
+          <!-- Team avatars row -->
+          <div style="display:flex;gap:.75rem;margin-bottom:1.5rem;align-items:center">
+            <!-- AVATAR 1 — replace background/initials with real photo -->
+            <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#1a4a3a,#16a34a);display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:700;color:#fff;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.1);flex-shrink:0">PC</div>
+            <!-- AVATAR 2 -->
+            <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#1a2a4a,#1e40af);display:flex;align-items:center;justify-content:center;font-size:.9rem;font-weight:700;color:#fff;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.1);flex-shrink:0;margin-left:-12px">ST</div>
+            <!-- AVATAR 3 -->
+            <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#3a1a0a,#c2410c);display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700;color:#fff;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.1);flex-shrink:0;margin-left:-12px">AS</div>
+            <div style="margin-left:.25rem">
+              <div style="font-size:.88rem;font-weight:700;color:#111827">PropCapital Support</div>
+              <div style="display:flex;align-items:center;gap:.4rem;margin-top:.2rem">
+                <div style="width:8px;height:8px;border-radius:50%;background:#16a34a"></div>
+                <span style="font-size:.75rem;color:#16a34a;font-weight:600">Online now</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chat preview bubble -->
+          <div style="background:#fff;border-radius:12px 12px 12px 4px;padding:.85rem 1rem;margin-bottom:.75rem;box-shadow:0 2px 8px rgba(0,0,0,.06);max-width:90%">
+            <p style="font-size:.85rem;color:#374151;margin:0;line-height:1.55">Hello Trader! 👋 How can I help you today?</p>
+            <p style="font-size:.7rem;color:#9CA3AF;margin:.35rem 0 0">PropCapital Support · just now</p>
+          </div>
+
+          <!-- Reply bubble -->
+          <div style="background:#E85D20;border-radius:12px 12px 4px 12px;padding:.85rem 1rem;margin-left:auto;max-width:80%">
+            <p style="font-size:.85rem;color:#fff;margin:0;line-height:1.55">How long does it take to receive a payout?</p>
+          </div>
+
+          <!-- Response bubble -->
+          <div style="background:#fff;border-radius:12px 12px 12px 4px;padding:.85rem 1rem;margin-top:.75rem;box-shadow:0 2px 8px rgba(0,0,0,.06);max-width:90%">
+            <p style="font-size:.85rem;color:#374151;margin:0;line-height:1.55">Once you request a payout from your dashboard, we process it within 3-5 business days via Wise or bank transfer.</p>
+            <p style="font-size:.7rem;color:#9CA3AF;margin:.35rem 0 0">PropCapital Support · just now</p>
+          </div>
+
+          <!-- CTA at bottom of card -->
+          <button onclick="if(window.$crisp){window.$crisp.push(['do','chat:open'])}" style="width:100%;margin-top:1.25rem;background:#111827;color:#fff;border:none;padding:.8rem;border-radius:99px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:.88rem;cursor:pointer;transition:background .2s" onmouseover="this.style.background='#E85D20'" onmouseout="this.style.background='#111827'">Start a conversation</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <!-- FAQ — edit questions and answers -->
 <section class="faq" id="faq">
@@ -694,8 +977,8 @@ footer{background:var(--dark);padding:4rem 5% 0}
       <h4>Support</h4>
       <a href="#">Live chat</a>
       <a href="mailto:contact@propcapital.net">contact@propcapital.net</a>
-      <a href="#">Terms of service</a>
-      <a href="#">Privacy policy</a>
+      <a href="/terms.html">Terms of service</a>
+      <a href="/privacy.html">Privacy policy</a>
     </div>
   </div>
   <div class="wrap foot-btm">
@@ -730,5 +1013,28 @@ document.querySelectorAll("a[href^='#']").forEach(function(a){
   });
 });
 </script>
+
+  <!-- ============================================================
+  CRISP LIVE CHAT
+  To activate:
+  1. Go to crisp.chat → sign up free
+  2. Add a new website → copy your Website ID
+  3. Replace f6ad752b-acaa-45f5-bbba-1bb253c9fa28 below with your real ID
+  4. Customise greeting, team name, colors in Crisp dashboard
+  ============================================================ -->
+  <script type="text/javascript">
+    window.$crisp=[];
+    window.CRISP_WEBSITE_ID="f6ad752b-acaa-45f5-bbba-1bb253c9fa28";
+    (function(){
+      var d=document;
+      var s=d.createElement("script");
+      s.src="https://client.crisp.chat/l.js";
+      s.async=1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+    window.$crisp.push(["set","session:segments",[["website-visitor"]]]);
+    window.$crisp.push(["config","color:theme",["orange"]]);
+    window.$crisp.push(["config","sound:mute",[false]]);
+  </script>
 </body>
 </html>
