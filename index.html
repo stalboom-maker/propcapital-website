@@ -51,6 +51,7 @@ body{background:var(--white);color:var(--dark);font-family:"Plus Jakarta Sans",s
 .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:"Plus Jakarta Sans",sans-serif;font-weight:700;font-size:.92rem;padding:.75rem 1.8rem;border-radius:99px;border:none;cursor:pointer;text-decoration:none;transition:all .2s}
 .btn-orange{background:linear-gradient(180deg,var(--orange-h) 0%,var(--orange) 100%);color:#fff;box-shadow:0 4px 16px rgba(232,93,32,.35),0 1px 0 rgba(255,255,255,.2) inset}
 .btn-orange:hover{background:linear-gradient(180deg,#ff7840 0%,var(--orange-h) 100%);transform:translateY(-2px);box-shadow:0 10px 28px rgba(232,93,32,.4),0 1px 0 rgba(255,255,255,.22) inset}
+.nav-right .btn.btn-orange{white-space:nowrap;line-height:1.2}
 .btn-ghost{background:transparent;color:var(--dark);border:1.5px solid var(--border2)}
 .btn-ghost:hover{border-color:var(--orange);color:var(--orange)}
 .btn-white{background:#fff;color:var(--orange)}
@@ -67,14 +68,15 @@ body{background:var(--white);color:var(--dark);font-family:"Plus Jakarta Sans",s
 
 /* ======= NAV ======= */
 nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav-w{display:flex;align-items:center;justify-content:space-between;height:68px;gap:2rem}
+.nav-w{display:flex;align-items:center;justify-content:space-between;height:68px;gap:2rem;flex-wrap:nowrap;min-width:0}
 /* LOGO SIZE — edit height value to change logo size in nav */
-.nav-logo{height:62px;width:auto;display:block;object-fit:contain}
-.nav-links{display:flex;list-style:none;gap:1.75rem}
-.nav-links a{color:var(--mid);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s}
+.nav-logo{height:62px;width:auto;max-width:min(220px,34vw);display:block;object-fit:contain;flex-shrink:0}
+.nav-links{display:flex;list-style:none;gap:1.75rem;flex-wrap:nowrap;flex:1;justify-content:center;min-width:0;margin:0 1rem}
+.nav-links li{flex-shrink:0}
+.nav-links a{color:var(--mid);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s;white-space:nowrap}
 .nav-links a:hover{color:var(--orange)}
-.nav-right{display:flex;align-items:center;gap:.75rem}
-.nav-login{color:var(--mid);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s}
+.nav-right{display:flex;align-items:center;gap:.75rem;flex-shrink:0}
+.nav-login{color:var(--mid);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s;white-space:nowrap;flex-shrink:0}
 .nav-login:hover{color:var(--dark)}
 .nav-social{display:flex;align-items:center;gap:.55rem}
 .social-icon-link{width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px;color:#0F1629;text-decoration:none;transition:color .2s,background .2s,transform .2s}
@@ -288,6 +290,15 @@ footer{background:#fff;border-top:1px solid var(--border)}
 .foot-copy{font-size:.75rem;color:#9B9B9B;text-align:right;white-space:nowrap}
 
 /* ======= RESPONSIVE ======= */
+@media(max-width:1200px){
+  .nav-w{gap:1.25rem}
+  .nav-links{gap:1.1rem;margin:0 .65rem}
+}
+@media(max-width:1040px){
+  .nav-links{gap:.75rem}
+  .nav-links a,.nav-login{font-size:.82rem}
+  .nav-logo{height:54px;max-width:min(200px,32vw)}
+}
 @media(max-width:1020px){
   .p-grid{grid-template-columns:repeat(2,1fr)}
 }
@@ -303,7 +314,7 @@ footer{background:#fff;border-top:1px solid var(--border)}
   .r-item:nth-child(2n){border-right:none}
   .r-item:nth-child(3){border-right:1px solid rgba(255,255,255,.07)}
 }
-@media(max-width:640px){
+@media(max-width:780px){
   .nav-links,.nav-login,.nav-social{display:none}
   .hamburger{display:flex}
   .hiw-cards{grid-template-columns:1fr}
@@ -318,10 +329,12 @@ footer{background:#fff;border-top:1px solid var(--border)}
   html,body{width:100%;max-width:100%;overflow-x:hidden}
   section{overflow-x:clip}
   .wrap{width:100%;max-width:100%;padding-left:20px;padding-right:20px;min-width:0}
-  .nav-w{gap:.65rem;min-width:0}
-  .nav-logo{height:44px;max-width:min(190px,48vw)}
-  .nav-right{gap:.5rem;flex-shrink:0}
-  .nav-right .btn{padding:.72rem 1rem;font-size:.86rem;white-space:normal;text-align:center}
+  .nav-w{gap:.55rem;height:64px}
+  .nav-logo{height:44px;max-width:min(175px,44vw)}
+  .nav-links{gap:.5rem;margin:0 .25rem}
+  .nav-links a,.nav-login{font-size:.78rem}
+  .nav-right{gap:.45rem}
+  .nav-right .btn.btn-orange{padding:.62rem .95rem;font-size:.78rem}
   .ttl{font-size:clamp(1.9rem,8.5vw,2.35rem);line-height:1.12}
   .sub,.hero-sub{font-size:.98rem;line-height:1.7}
   .btn,button{min-height:44px;min-width:44px}
