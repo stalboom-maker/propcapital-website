@@ -67,6 +67,10 @@ body{background:var(--white);color:var(--dark);font-family:"Plus Jakarta Sans",s
 .rr.on{opacity:1;transform:none}
 
 /* ======= NAV ======= */
+.launch-offer{width:100%;background:var(--orange);color:#fff;padding:1rem 5%;box-shadow:0 4px 16px rgba(15,22,41,.12);position:relative;z-index:400}
+.launch-offer-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:1.25rem;text-align:center;font-size:1rem;font-weight:800;line-height:1.35}
+.launch-countdown{display:inline-flex;align-items:center;justify-content:center;border-radius:99px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.25);padding:.38rem 1rem;font-size:.92rem;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
+.launch-offer.is-hidden{display:none}
 nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
 .nav-w{display:flex;align-items:center;justify-content:space-between;height:68px;gap:2rem;flex-wrap:nowrap;min-width:0}
 /* LOGO SIZE — edit height value to change logo size in nav */
@@ -315,6 +319,9 @@ footer{background:#fff;border-top:1px solid var(--border)}
   .r-item:nth-child(3){border-right:1px solid rgba(255,255,255,.07)}
 }
 @media(max-width:780px){
+  .launch-offer{padding:.95rem 5%}
+  .launch-offer-inner{flex-direction:column;gap:.65rem;font-size:.95rem}
+  .launch-countdown{font-size:.88rem;padding:.34rem .9rem}
   .nav-links,.nav-login,.nav-social{display:none}
   .hamburger{display:flex}
   .hiw-cards{grid-template-columns:1fr}
@@ -480,6 +487,13 @@ footer{background:#fff;border-top:1px solid var(--border)}
 </style>
 </head>
 <body>
+
+<div class="launch-offer" id="launchOffer" aria-live="polite">
+  <div class="launch-offer-inner">
+    <span>🔥 Launch offer — 20% off all challenges. Use code LAUNCH20 at checkout.</span>
+    <span class="launch-countdown" id="launchCountdown">Ends soon</span>
+  </div>
+</div>
 
 <!-- NAV — edit links and CTA text -->
 <nav>
@@ -1592,6 +1606,30 @@ footer{background:#fff;border-top:1px solid var(--border)}
 <script>
 function mToggle(){document.getElementById("mob").classList.toggle("open")}
 function mClose(){document.getElementById("mob").classList.remove("open")}
+function initLaunchOffer(){
+  var offer=document.getElementById("launchOffer");
+  var countdown=document.getElementById("launchCountdown");
+  if(!offer||!countdown){return}
+  var offerEnd=new Date("2026-05-27T22:59:00Z").getTime();
+
+  function update(){
+    var total=Math.max(0,offerEnd-Date.now());
+    if(total<=0){
+      offer.classList.add("is-hidden");
+      return;
+    }
+    var secondsTotal=Math.floor(total/1000);
+    var days=Math.floor(secondsTotal/86400);
+    var hours=Math.floor((secondsTotal%86400)/3600);
+    var minutes=Math.floor((secondsTotal%3600)/60);
+    var seconds=secondsTotal%60;
+    countdown.textContent="Ends in "+days+"d "+hours+"h "+minutes+"m "+seconds+"s";
+  }
+
+  update();
+  setInterval(update,1000);
+}
+initLaunchOffer();
 function faqToggle(el){
   var item=el.parentElement;
   var isOpen=item.classList.contains("open");
