@@ -492,8 +492,9 @@ footer{background:#fff;border-top:1px solid var(--border)}
 
 <div class="launch-offer" id="launchOffer" aria-live="polite">
   <div class="launch-offer-inner">
-    <span>🔥 Launch offer — 20% off all challenges. Use code LAUNCH20 at checkout.</span>
+    <span>🔥 Summer offer — 20% off all challenges. Use code SUMMER20 at checkout.</span>
     <span class="launch-countdown" id="launchCountdown">Ends soon</span>
+    <span class="launch-countdown">29 spots left</span>
   </div>
 </div>
 
@@ -1654,7 +1655,7 @@ function initLaunchOffer(){
   var offer=document.getElementById("launchOffer");
   var countdown=document.getElementById("launchCountdown");
   if(!offer||!countdown){return}
-  var offerEnd=new Date("2026-05-27T22:59:00Z").getTime();
+  var offerEnd=new Date("2026-06-15T21:59:00Z").getTime();
 
   function update(){
     var total=Math.max(0,offerEnd-Date.now());
